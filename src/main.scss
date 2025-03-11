@@ -67,7 +67,7 @@ a {
 .content {
   position: relative;
   width: 1024px;
-  margin: 50px auto;
+  margin: 100px auto;
   @include border-radius(5px);
   background-color: #fff;
   overflow: hidden;
@@ -75,6 +75,9 @@ a {
     width: 100%;
     margin: 0;
     @include border-radius(0);
+  }
+  @media print {
+    margin: 0 auto;
   }
 }
 
@@ -91,6 +94,7 @@ a {
   @media print {
     color: #000;
     background-color: #fff;
+    margin-bottom: 0;
   }
   .title {
     width: 100%;
